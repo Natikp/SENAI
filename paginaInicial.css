@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cor de fundo escura e fonte geral */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #110214;
+    color: #ecf0f1;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #1d0d41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9b59b6;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #9b59b6;
+  }
+  
+  /* Banner */
+  .banner {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+    background: linear-gradient(135deg, rgba(69, 30, 78, 0.7), rgba(25, 3, 37, 0.7)), url('imagens/istockphoto-1460085861-612x612.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ecf0f1;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .banner button {
+    padding: 12px 30px;
+    background-color: #9b59b6;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .banner button:hover {
+    background-color: #8e44ad;
+  }
+  
+  /* Seção de Consultores */
+  .consultores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #0b050f;
+  }
+  
+  .consultor-card {
+    background: #0d010f;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .consultor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .consultor-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #9b59b6;
+  }
+  
+  .consultor-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  /* Hover e animações */
+  .consultor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(30, 2, 34, 0.4);
+  }
+  
+  .consultor-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1f0e2b;
+    margin-top: 30px;
+  }
+  
